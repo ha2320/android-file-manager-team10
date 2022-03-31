@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url = uri("https://dl.bintray.com/kotlin/kotlin-eap") }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories { // for Glide libraries
+        google()
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+    }
+}
+rootProject.name = "FileManager"
+include ':app'
